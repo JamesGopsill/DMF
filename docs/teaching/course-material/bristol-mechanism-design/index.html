@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="James Gopsill">
+  <meta name="keywords" content="">
+
+  <title>Bristol Mechanism Design</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/style/style.css">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+  </script>
+  <script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Design Manufacturing Futures Hub</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="people/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Institutions <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/places\Bath\index.html">Bath</a></li>
+              <li><a href="/places\Bristol\index.html">Bristol</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/people/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/people\duncan-boa\index.html">Dr. Duncan Boa</a></li>
+              <li><a href="/people\chris-snider\index.html">Dr. Chris Snider</a></li>
+              <li><a href="/people\james-gopsill\index.html">Dr. James Gopsill</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="research/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/research/papers/index.html">Publications</a></li>
+              <li><a href="/research/projects/index.html">Projects</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/teaching/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teaching <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/teaching/handbook/index.html">D&amp;M Handbook</a></li>
+              <li><a href="/teaching/course-material/index.html">Course Material</a></li>
+              <li><a href="/teaching/student-projects/index.html">Student Projects</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        
+
+<div class="jumbotron">
+  <h1>Design &amp; Manufacture 2</h1>
+  <h2>Mechanism Design</h2>
+</div>
+
+<hr>
+<h1 id="aims">Teaching Aims</h1>
+<hr>
+
+<p>Continuning on from the Shaft Design exercise, the Mechanism Design project looks to:</p>
+
+<ul>
+  <li>provide awareness of mechanisms and their applications</li>
+  <li>further practice design thinking, rationale capture and build on the feedback from the previous coursework</li>
+  <li>apply system modelling tools to in prelimarny design scenarios</li>
+  <li>practice your theoretical engineering knowledge in an unconstrained and unfamiliar environment</li>
+</ul>
+
+<p>This site provides the resources you will need to work through thise exercise, although it is important to note that you are expected to do your own research to help you through the design problem.</p>
+
+<p>To overcome this challenge, you will need to bring your engineering skill and knowledge that you have gained from all the modules you have completed so far.</p>
+
+<figure>
+  <img src="./images/engineering_knowledge.PNG" />
+  <figcaption>Figure 1: Engineering Design Skills &amp; Knowledge</figcaption>
+</figure>
+
+<hr>
+<h1 id="exercise">The Design Exercise</h1>
+<hr>
+
+<p>This section presents the description of the exercise and can also be <a target="_blank" href="./exercise_handout.pdf">downloaded as a pdf</a>.</p>
+
+<hr>
+<h2>Introduction</h2>
+<hr>
+
+<p>
+  You will be working in pairs to design a mechanism that will open and close a roof for a convertible car as shown in Figure 2. This is an open-ended feasibility exercise with a high level of uncertainty. There are many ways that one could solve the problem. Your report should detail the:
+</p>
+
+<ul>
+  <li>design process you have gone through</li>
+  <li>assumptions made and their implications; and,</li>
+  <li>justification for your design decisions.</li>
+</ul>
+
+<figure>
+  <img src="./images/mini.jpg" />
+  <figcaption>Figure 2: Mini Convertible Roof Mechanism (<a href="http://www.cleanmpg.com/forums/showthread.php?t=18297">Link to source</a>)</figcaption>
+</figure>
+
+<p>
+  To start, you will need to come up with a Product Design Specification (PDS) for the design of the mechanism. You will then come up with an initial set of concepts for a deployment mechanism and use the PDS to compare the concepts using the controlled convergence strategy. A decision should be made by week 20 as to which one you will be carrying forward for further iterations and preliminary design work. The PDS along with a diagram of your chosen concept will form a stage-gate submission at the end of <strong>week 20 (Friday 17th March, 2017)</strong>.
+</p>
+
+<p>
+  After selecting your design, you will develop a dynamics model in Simulink that models the deployment and retraction of your mechanism. A description of the model should be presented within your report, which describes what calculations the simulink model is performing during each iteration. You should also describe how the motor &amp; gearbox and has been modelled. The assumptions within the model should also be clearly articulated along with the likely impact they will have on the results that you will generate. Using this model, you will then trial a variety of motor, gearbox ratios and damping values to achieve a convertible roof with a smooth operation.
+</p>
+
+<p>
+  The gearbox ratio will then be used to form the initial requirement for your gearbox design. You will then evaluate the suitability of a multi-stage spur and helical gearbox. These will consist of gears of your choosing in order to generate the required ratio. <strong>Please note</strong>, your PDS should also cover requirements for your motor and gearbox.
+</p>
+
+<p>
+  The final aspect that you will cover is the creation of a general assembly of the gearbox arrangement. You are not required to select all the components in the gearbox although you could provide estimates for the shaft diameters and bearings given your experience from the previous exercise. The CAD model should have representative models of these components in order to demonstrate the arrangement.
+</p>
+
+<hr>
+<h2>Problem Details</h2>
+<hr>
+
+<p>
+  Figure 2 provides a drawing of the car that you will be designing for. The mechanism can be connected to the car within the boundary marked (a) and the mechanism has to extend to reach the windscreen (b). You do not have to worry about storing the mechanism when closed, as it will sit atop the main chassis as demonstrated in Figures 2 &amp; 3. You should aim to collapse within the area (a) and extend to meet the windscreen within the region (b). You are not required to meet these values <strong>exactly</strong> but aim to get as close as possible.
+</p>
+
+<p>
+  To get you started, here are <strong>some</strong> example requirements that you should consider when forming your Product Requirement Specification. We do expect these points to be expanded upon and made quantifiable where possible.
+</p>
+
+<ul>
+  <li>To have a reasonable deployment time.</li>
+  <li>To minimise the space consumed when fully packed down.</li>
+  <li>To maximise interior space when fully deployed.</li>
+  <li>To be safe for operation near passengers.</li>
+  <li>To minimise the energy required for deployment and retraction.</li>
+</ul>
+
+<figure>
+  <img src="./images/mini-schematic.png" />
+  <figcaption>Figure 3: Key dimensions for deployment mechanism (<a href="http://www.clker.com/cliparts/f/f/a/6/1197126112776721241criterium_mini_convertible.svg">Link to source</a>)</figcaption>
+</figure>
+
+<hr>
+<h2>Submission</h2>
+<hr>
+
+<p>
+  The exercise will be assessed through a stage-gate submission of your initial PDS and chosen concept at the mid-exercise stage-gate on blackboard <strong>(5%, Friday 17th March 2017)</strong> and a final design report that should also be submitted on blackboard as well as a hard copy submitted to the School Office by <strong>3:30pm on 5th May 2017</strong>. A <a target="_blank" href="./main.tex">LaTeX template</a> is provided for the report. The report should be no longer than 15 pages (excluding A3 submissions &amp; reference list) and include the following (page guide and mark assignment in brackets):
+</p>
+
+<ol>
+  <li>Title page (Title of the exercise, names &amp; student numbers)</li>
+  <li>Introduction (1 page)</li>
+  <li>Product Design Specification (1 page, 10%)</li>
+  <li>Concepts &amp; Concept Selection (2 pages, 10%)</li>
+  <li>Deployment Modelling (3 pages, 20%)</li>
+  <li>Motor, Gear Ratio &amp; Damping Selection (3 pages, 15%)</li>
+  <li>Gearbox Design (3 pages, 20%)</li>
+  <li>Solution Specification (1 page)</li>
+  <li>Conclusion &amp; References (1 page)</li>
+  <li>Separate A3 pages of the (10%):</li>
+  <ol type="a">
+    <li>Simulink Model; and,</li>
+    <li>Gearbox Assembly Drawing.</li>
+  </ol>
+</ol>
+
+<p><strong>Additional Notes</strong></p>
+<ul>
+  <li>10% for the quality of report writing.</li>
+  <li>The reference list may go beyond the 15 page limit.</li>
+</ul>
+
+<hr>
+<h2>Support &amp; Timeline</h2>
+<hr>
+
+<p>
+  As with the first exercise, supporting lectures are given on Tuesday afternoons and there is an expectation that you will work on the exercise ahead of the Tuesday morning sessions where there will staff available to provide formative feedback and support. Table 1 provides a summary of the time-line for the exercise.
+</p>
+
+<div class="table-responsive">
+<table class="table table-condensed table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Teaching Week</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Type</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>17</td>
+      <td>Tuesday 21st February 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>Introduction to the Feasibility Design Task</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Tuesday 7th March 2017</td>
+      <td>9:00-13:00</td>
+      <td>Tutorial</td>
+      <td>Form pairs, Exercise Familiarisation &amp; Product Design Specification</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Tuesday 7th March 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>Product Design Specification, Concept Design &amp; Selection</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tuesday 14th March 2017</td>
+      <td>9:00-13:00</td>
+      <td>Tutorial</td>
+      <td>Concept Design &amp; Selection</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Tuesday 14th March 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>Modelling the Deployment of the Mechanism 1</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Friday 17th March 2017</td>
+      <td>14:00-15:00</td>
+      <td>Submission</td>
+      <td>PDS &amp; Linkage Model of Selected Concept (Blackboard)</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Tuesday 21st March 2017</td>
+      <td>9:00-13:00</td>
+      <td>Tutorial</td>
+      <td>Deployment Modelling</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Tuesday 21st March 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>Modelling the Deployment of the Mechanism 2</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Tuesday 28th March 2017</td>
+      <td>9:00-13:00</td>
+      <td>Tutorial</td>
+      <td>Deployment Modelling and Motor &amp; Gear Ratio Selection</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Tuesday 28th March 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>Gearbox Design</td>
+    </tr>
+    <tr>
+      <td colspan="5" class="text-center"><strong>Easter</strong></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Tuesday 25th April 2017</td>
+      <td>14:00-15:00</td>
+      <td>Tutorial</td>
+      <td>Gearbox Design</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Tuesday 25th April 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>General Assemblies &amp; Submission Details</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Tuesday 2nd May 2017</td>
+      <td>9:00-13:00</td>
+      <td>Tutorial</td>
+      <td>Report Writing &amp; Submission Details</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Tuesday 2nd May 2017</td>
+      <td>14:00-15:00</td>
+      <td>Lecture</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Friday 5th May 2017</td>
+      <td>15:30</td>
+      <td>Submission</td>
+      <td>Feasibility Design Report Submission</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h1 id="process">The Design Process</h1>
+
+<p>The design process you will follow consists of six main activties, which are:</p>
+
+<ol>
+  <li>Product Design Specification</li>
+  <li>Concept Generation</li>
+  <li>Concept Selection</li>
+  <li>Deployment Modelling</li>
+  <li>Motor, Gear Ratio &amp; Damping Selection</li>
+  <li>Gearbox Design</li>
+</ol>
+
+<p>This section provides a brief overview and guidance for each section. This is in addtion to the lectures and tutorial sessions. We strongly recommend that you utilise the tutorial sessions to help you through the exercise.</p>
+
+<hr>
+<h2>Product Design Specification</h2>
+<hr>
+
+<p>A Product Design Specification (PDS) contains all the requirements that your design needs to meet and is used to evaluate concepts as well as the performance of your design as you go through the design process. You will be expected to form your own PDS for this exercise</p>
+
+<p>To do this, you are expected to research the capabilties of existing designs and environment in which this mechanism will operate in as well as use your own engineering knowledge on the likely factors that will affect its performance. Remember, it is important for you to be as complete as possible with the PDS eventhough you may not be assessing your concepts against some of the requirements that have been captured.</p>
+
+<p>The format of the PDS should follow the format of the previous exercise and use the following headings:</p>
+
+<div class="table-responsive">
+<table class="table table-condensed table-striped">
+  <thead>
+  <tr>
+    <th>No.</th>
+    <th>Requirement</th>
+    <th>Must/Wish</th>
+    <th>Method of Assessment</th>
+    <th>Success Criteria</th>
+    <th>Will be assessed in this exercise</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>It is important to note that the format we use in these design exercises is not the only method of presenting a PDS. A PDS could also come in the form of a report or use a more diagrammatic method such as a Weighted Objectives Tree.</p>
+
+<hr>
+<h2>Concept Generation</h2>
+<hr>
+
+<p>To generate your concepts, you will be provided with a lego construction kit that consisted of a number of bars and pins. Once you have generated a few potential solutions, you should use the <a target="_blank" href="http://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/">Linkage software</a> to create a digital version of the concepts. You can then use this model to evaluate the motion profile and take screenshots of your design for your report.</p>
+
+<p>Here are a couple of tutorials from YouTube to help get you started with the software.</p>
+
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/K9z9JFreHT8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/5-mJJdm87bI?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<br>
+
+<p>You should also be considering what you could calculate in order to compare the concepts. For example, you could provide estimates for the mass of each concept. These details should be included when discussing the concepts in your report.</p>
+
+<hr>
+<h2>Concept Selection</h2>
+<hr>
+
+<p>Looking back on your first year notes, your should recall that there are a number of techniques that one can use to evaluate their concepts. Examples include:
+
+<ul>
+  <li>Multi-criteria design analysis;</li>
+  <li>Dot Sticking;</li>
+  <li>Weighted Objectives Tree; and,</li>
+  <li>Controlled Convergence.</li>
+</ul>
+
+<p>Depending on your design problem, you may use one or more of these techniques in order to decide the concept to be taken forward.</p>
+
+<p>In this exercise, you will be using the controlled convergence method for selecting the concept that you will take forward to the preliminary design phase. In controlled convergence, you take one of the concepts as the datum by which you compare you other concepts against. This comparison is made against the PDS that you have formed at the beginning of the exercise and for each requirement (where applicable) you assess whether the concept better, worse or the same as the datum. From this, you will getting a final score as to, which concept should be carried forward.</p>
+
+<hr>
+<h2>Deployment Modelling</h2>
+<hr>
+
+<p>Simulink is a block modelling environment that is widely used to model engineering systems. It has the capability to run complex multi-domain models using a range of solvers. Block modelling provides a great way to visualise the connections and flow of calculations within your system. A key advantage of creating a systems model is the ability to search the design sapce by varying the input design parameters.</p>
+
+<p>In this task you will need to perform a few hand calculations in order to get an estimate of the torque required to get you mechanism moving. You should be able to do this with you knowledge of centre of masses and resistance due to gravity. From this you can select an intial motor (from <a href="http://www.bosch-ibusiness.com/boaaelmoocs/category/D.C.%20motors%20without%20transmission/114">Bosch</a>) and the gear ratio for your gearbox (Guide: this will probably be in the range of 1:500-1:1000 ratio).</p>
+
+<p>You will then create a systems model for your chosen design and the evaluating how the dynamic behaviour is affected by a change in the motor, gear ratio &amp; damping parameters.</p>
+
+<p>To support you in generating this model, you have two lectures dedicated to generating mechanisms within Simulank. These can also be found on <a target="_blank" href="https://www.youtube.com/playlist?list=PLAmnyJpQ2yBLdCreVAUA-eGmMJLctVGqs">YouTube</a>. The demos showcases all the functionality that you will need but it up to you to generate the model for your system. Staff are available in the tutorials to help you with the logic of forming your model. Remember to record all the assumptions that have been made in generating the model and their impact on the results you will generate.</p>
+
+<div class="well well-sm">
+  <p>Templates for the models used in the videos are provided <a target="_blank" href="./simulink_template_models.zip">here</a>.</p>
+</div>
+
+<!-- Pendulum Demo -->
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/qcyka_JqWLg?list=PLAmnyJpQ2yBLdCreVAUA-eGmMJLctVGqs?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <!-- Pendulum Deployment Demo  -->
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/zlPB1LTLSSw?list=PLAmnyJpQ2yBLdCreVAUA-eGmMJLctVGqs?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <!-- Four-bar mechanism Demo -->
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/sLqt_UT3SZg?list=PLAmnyJpQ2yBLdCreVAUA-eGmMJLctVGqs?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<br>
+<p>A fully annotated A3 print out of your simulink model should be included in your report and clearly articulates what the model represents.</p>
+
+<hr>
+<h2>Motor, Gear Ratio &amp; Damping Selection</h2>
+<hr>
+
+<p>Once you have your model, you can then start to investigate how changes in the motor, gear ratio and damping affect the performance of your mechanism (such as, deployment time). Graphs evaluating these parameters with respect to the performance of the mechanism are expected with multiple lines representing the different cases on the same graph.</p>
+
+<p>After evaluating these parameters, you should arrive at an initial solution for the motor, gear ratio and damping that is required by your mechanism.</p>
+
+<figure>
+  <img src="./images/evaluating-parameters.png" />
+  <figcaption>Evaluating Design Parameters</figcaption>
+</figure>
+
+<hr>
+<h2>Gearbox Design</h2>
+<hr>
+
+<p>Now that you have calculated your gear ratio, you can begin to design the multi-stage gearbox. To do this, we will be following the design guidelines for the Mechanical Design Data Manual. You will have a lecture that will provide an overview of the gearbox design process. Your task is to evaluate both a spur and helical gear set for your mechanism. The following sections provide a summary of the guidelines is included in on this page for your reference.</p>
+
+<hr>
+<h3 id="gears">Spur &amp; Helical Gear Guidelines <small>- from the <a href="http://www.learneasy.info/MDME/modules/7758D_Machine_Design/gears/gears.pdf">Mechanical Design Data Manual</a></small></h3>
+<hr>
+
+<p>
+  There are many types of gears used in engineering as set out in Australian Standard AS2075 - Glossary of Terms and Notations for Gears. Some of the types encountered include:
+</p>
+
+<ul>
+  <li>spur</li>
+  <li>helical</li>
+  <li>double helical (herringbone)</li>
+  <li>bevel</li>
+  <li>hypoid</li>
+  <li>worm</li>
+</ul>
+
+<p>
+  Two gears in mesh are called a gear pair. Normally gears mesh externally but sometimes the mesh may be internal, that is, one of the gears has the teeth cut internally. The smaller gear of a pair is called the pinion whereas the larger is called the wheel. In a pair of gears, the gear transmitting input torque and power is called the driver whereas the gear transmitting output torque and power is known as the driven. Normally in mechanical power transmission, the driver is the pinion so the wheel rotates at a slower speed than the pinion, that is, there is a reduction in speed through the gear pair. (You might like to discuss the reason why this is so).
+</p>
+
+<p>
+  Usually gears are cylindrical but other forms are possible of which the most common is the rack and pinion. Here the wheel is flat (of infinite diameter) and is known as a rack.
+</p>
+
+<p>
+  When more than two gears are in continuous mesh, this is known as a <i>gear train</i>. There are several types of gear train used in mechanical power transmission, including <i>simple</i>, <i>compound</i> and <i>planetary</i>. These are illustrated in Figure 1.
+</p>
+
+<figure>
+  <img src="./images/gear-trains.png" />
+  <figcaption>Figure 1: Gear Trains</figcaption>
+</figure>
+
+<p>
+  In the case of the simple gear train, the intermediate gear (or gears) are known as <i>idler</i> gears because they do not change the ratio between the driven and driver gears. (You might like to discuss the purpose of idler gears).
+</p>
+
+<p>
+  Of the various types of gears used in engineering, the most common are spur and helical gears.  These are illustrated in Figure 2.
+</p>
+
+<p><i>Spur gears</i> have the teeth cur parallel to the axis of the shaft</p>
+
+<p><i>Helical gears</i> have the teeth cut at an angle to the axis of the shaft. The angle is called the helix angle, $ \alpha $ and is usually about 20&deg; for single helical gears or about 30-35&deg; for double helical (herringbone) gears.</p>
+
+<p>Note: With a helical gear pair, one helix must be right-hand and the other left-hand.</p>
+
+<figure>
+  <img src="./images/spur-helical.png" />
+  <figcaption>Figure 2: Spur and helical gears</figcaption>
+</figure>
+
+<h4>Velocity Ratio</h4>
+<p>
+  For all gears other than the worm and wheel, the velocity ratio of a gear pair is the ratio of the number of teeth in each gear. For example, if a 20 tooth pinion meshes with a 40 tooth wheel, the velocity ratio is:
+</p>
+
+$$ VR = \frac{40}{20} = 2 $$
+
+<p>
+  In the case of a compound gear train, the overall velocity ratio is the multiplication of the velocity ratio of each gear pair. If in the above example, the wheel had a 20 tooth pinion attached to it, that meshed with a 60 tooth wheel, the overall velocity ratio is:
+</p>
+
+$$ VR = \frac{40}{20} \times \frac{60}{20} = 2 \times 3 = 6 $$
+
+<p>
+  In the case of a worm and wheel, the velocity ratio is the number of teeth in the wheel divided by the number of starts in the worm. So if a 12 start worm meshed with a 61 tooth wheel, the velocity ratio is:
+</p>
+
+$$ VR = \frac{61}{12} = 5.083 $$
+
+<hr>
+<h4>Number of teeth</h4>
+<hr>
+
+<p>
+  It is impractical to have gears with too few teeth (just try and draw a gear with say 3 teeth). To get a reasonable tooth profile without undercutting and with a smooth transfer of power from pinion to wheel, a rule-of-thumb is that spur gears should have at least 17 teeth on the pinion and helical gears (20° helix angle) should have at least 14 teeth on the pinion.
+</p>
+
+<p>
+  For maximum life with meshing gears it is desirable to distribute the wear uniformly amongst all teeth, that is not to have the same teeth in mesh for every revolution of the wheel. The best situation possible is that the same teeth mesh together again only after the pinion revolutions equals the number of teeth in the wheel. This is also known as having all the teeth hunting. For example if there are 40 teeth in the wheel, the best possible situation is that re-meshing of the same teeth occurs only after the pinion has made 40 revolutions. The condition for this is that the velocity ratio cannot be reduced to a simpler ratio, that is, there is no common factor between the number of teeth in the pinion and the number of teeth in the gear.
+</p>
+
+<p>Some possible combinations are given in Table 1:</p>
+
+<div class="table-responsive">
+<table class="table table-condensed table-striped">
+  <caption>Table 1 Pinion-wheel combinations </caption>
+  <thead>
+    <tr>
+      <th>Teeth in Pinion</th>
+      <th>Teeth in Wheel</th>
+      <th>Revolutions of the pinion when cycle repeats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>18</td>
+      <td>38</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>38</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>38</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>38</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>40</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>40</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>40</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>
+  It can be seen therefore, that there can be a huge difference in the way wear will be distributed for approximately the same velocity ratio. However, in practice, exact velocity ratios are often needed (for example, for a camshaft) and in such cases, hunting teeth cannot be provided.
+</p>
+
+<hr>
+<h4>Limiting velocity ratio</h4>
+<hr>
+
+<p>
+  For a worm-wheel gear pair, the smallest velocity ratio obtainable in practice is about 5. For all other gear pairs, the smallest ratio is 1. There is no theoretical upper limit to the velocity ratio, however high velocity ratios are undesirable because of the large number of teeth that need to be cut in the wheel. This makes accurate machining difficult (if not impossible) and requires large centre distances which are also not usually desirable.
+</p>
+
+<p>
+  For example, consider a velocity ratio of 125 obtained with single pair of spur gears. With a pinion of 17 teeth and PCD 17 mm, the wheel would require 2125 teeth and a PCD of 2125 mm! The total number of teeth to be cut is 2142!
+</p>
+
+<p>
+  The same velocity ratio can be obtained with a compound gear train with 3 pairs of gears in mesh, each with a velocity ratio of 5. Then the total number of teeth that need to be cut is 306 (7 times less) and the maximum wheel PCD is only 85 mm.
+</p>
+
+<p>
+  Rule-of-thumb limits for a gear pair are given in Table 2 :
+</p>
+
+<div class="table-responsive">
+<table class="table table-condensed table-striped">
+  <caption>Table 2 Rule-of-thumb VR limits for a gear pair.</caption>
+  <thead>
+    <tr>
+      <th>Type of gear pair</th>
+      <th>VR lower limit</th>
+      <th>VR upper limit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Worm and wheel</td>
+      <td>5</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>All others</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<hr>
+<h4>Efficiency</h4>
+<hr>
+
+<p>The efficiency of a gear pair depends upon a number of factors:</p>
+
+<ul>
+  <li>Accuracy and finish. The better this is the higher the efficiency. In most cases, gears are accurately cut and machined to a fine finish. However in some cases gears may be cast and not machined.</li>
+  <li>Bearings used to support the gear shafts. The lower the bearing friction, the higher the efficiency. In most cases, rolling-element bearings are used.</li>
+  <li>Lubrication of the gears and bearings. The better the lubrication, the higher the efficiency. In most cases the gears are oil-lubricated but pre-sealed rolling-element bearings are also used.</li>
+</ul>
+
+<p>
+  With well machined and lubricated gears supported by rolling element bearings, the efficiency is usually about 95-96% for each gear pair. With a gear train, the overall efficiency is approximately the product of the efficiency of each gear pair. For example with a three pair compound gear train, if each pair has an efficiency of 96%, the overall efficiency will be about $0.96 \times 0.96 \times 0.96 = 0.885$.
+</p>
+
+<hr>
+<h4>Gear Parameters</h4>
+<hr>
+
+<p>Consider two gears in mesh as shown in Figure 3:</p>
+
+<figure>
+  <img src="./images/meshing-gears.png" />
+  <figcaption>Figure 3: Meshing gears</figcaption>
+</figure>
+
+<p>If the pinion has $n$ teeth and $PCD = d$ , and the wheel has $N$ teeth and $PCD = D$ then:</p>
+
+$$VR = \frac{N}{n} = \frac{D}{d}$$
+
+<p>
+  The nominal centre distance $C$ is:
+</p>
+
+$$ C = 0.5 (d + D) $$
+
+<p>This is known as the nominal centre distance because the actual centre distance is usually somewhat greater than this.</p>
+
+<p>The height of a tooth above the PCD line is known as the addendum A. The height of a tooth below the PCD line is known as the dedendum B.</p>
+
+<p>The angle made by the tangent to the gears at the point of contact is called the pressure angle $\theta$. This angle is usually 20&deg; and should be assumed so unless otherwise stated.</p>
+
+<p>
+  The point of contact is called the pitch point P. In order to obtain a constant velocity ratio the pitch point should not move as the gears move into and out of mesh. If the pitch point did move in and out with each mesh, then this would cause acceleration/deceleration with each mesh. If the gears are rotating at relatively high speeds this would cause high acceleration/deceleration with high inertia forces and accelerated wear.
+</p>
+
+<p>The pitch point remains fixed when the gears are cut with an involute profile. The involute profile can best be demonstrated by unwinding a thin cord from around a cylinder as shown in Figure 4.</p>
+
+<figure>
+  <img src="./images/fig4.png" />
+  <figcaption>Figure 4: Meshing gears</figcaption>
+</figure>
+
+<p>In the case of a rack and pinion, the mating profile to the involute on the pinion is a straight sided rack as illustrated in Figure 5. The angle of the rack is the pressure angle as previously defined.</p>
+
+<figure>
+  <img src="./images/fig5.png" />
+  <figcaption>Figure 5: Rack Profile</figcaption>
+</figure>
+
+<hr>
+<h4>Clearence</h4>
+<hr>
+
+<p>
+  To minimise friction, the teeth should contact only along the front face of the driver and the back face of the driven. There should be both circumferential and radial clearance as shown in Figure 6.
+</p>
+
+<figure>
+  <img src="./images/fig6.png" />
+  <figcaption>Figure 6: Clearences</figcaption>
+</figure>
+
+<p>
+  Radial clearance (or bottom clearance) is obtained by making the dedendum greater than the addendum. Usually $B = 1.25A$. Circumferential clearance is usually very small when the gears are new because wear automatically increases it. It can be obtained by making the centre distance slightly larger than the nominal centre distance. Circumferential clearance causes <strong>backlash</strong> and can be measured by holding one gear fixed and moving the other gear back and forth relative to it.
+</p>
+
+<hr>
+<h4>Module $M$</h4>
+<hr>
+
+<p>
+  Module M One of the most important parameters in gear design is the module which may be defined as the pitch circle diameter divided by the number of teeth. For a gear pair, the module must be the same for pinion and wheel. Hence:
+</p>
+
+$$ M = \frac{d}{n} = \frac{D}{N} $$
+
+<p>
+  Standard modules (first choice) in mm are:
+</p>
+
+<p>1 1.25 1.5 2 2.5 3 4 5 6 8 10 12 16 20 25 32 40 50</p>
+
+<p>
+  As the module increases, thedize of the gear teeth increase. That is, the gears become stronger and can transmit more torque and power. For example with a PCD of 200 mm, a module of 1 mm would mean 200 small teeth whereas a module of 10 mm would mean 20 large teeth. This is illustrated in Figure 7.
+</p>
+
+<figure>
+  <img src="./images/fig7.png" />
+  <figcaption>Figure 7: Module - tooth size comparison (PCD 200mm)</figcaption>
+</figure>
+
+<p>
+  The addendum, dedendum and depth of gear teeth are directly related to the module. For gear teeth of standard proportions the following relationships apply:
+</p>
+
+<ul>
+  <li>Addendum $A = M$</li>
+  <li>Dedendum $B = 1.25M$</li>
+  <li>Tooth depth $= A + B = 2.25M$</li>
+</ul>
+
+<p>The face width of gears is also related to the module but is also dependent upon the gear load (torque). The following rule-of-thumb face widths $W$ of the wheel are usual in mechanical power transmission:</p>
+
+<ul>
+  <li>Relatively light loads $W = 8M$</li>
+  <li>Moderate loads $W = 10M$</li>
+  <li>Heavy loads $W = 12M$</li>
+</ul>
+
+<p>Note: The face width of the pinion is usually 5-10% larger than the wheel (depending upon assembly tolerances).</p>
+
+<h5>Example 1</h5>
+
+<p>A spur gear pair are to have a velocity reduction ratio in the range 2.5 to 2.7. The proposed number of teeth in the pinion is 18 with a module of 5mm. Determine:</p>
+
+<ol type="a">
+  <li>A suitable number of teeth in the wheel and the reduction ratio in order to have all hunting teeth,</li>
+  <li>PCD of pinion and wheel,</li>
+  <li>Nominal centre distance,</li>
+  <li>Addendum, dedendum and tooth depth,</li>
+  <li>Face wisth of pinion and wheel if loads can be described as moderate.</li>
+</ol>
+
+<h5>Solution</h5>
+
+<p>a)<br>Various combination of teeth in the wheel, velocity ratio and revolutions of the pinion when the cycle repeats are set out in the table below:</p>
+
+<div class="table-responsive">
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th>Teeth in pinion</th>
+      <th>Teeth in wheel</th>
+      <th>Velocity ratio</th>
+      <th>Pinion revolution when cycle repeats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>18</td>
+      <td>45</td>
+      <td>2.5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>46</td>
+      <td>2.556</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>47</td>
+      <td>2.611</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>48</td>
+      <td>2.667</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Hence it is seen that the only combination that give a velocity ratio in the required range with all teeth hunting is the 18:47 ratio. Hence choose <strong>47</strong> teeth in the wheel with velocity ratio <strong>2.556</strong>.</p>
+
+<p>b)<br>
+  PCD of the pinion $= 5 \times 18 = 90mm $<br>
+  PCD of the wheel $= 5 \times 47 = 235mm $
+</p>
+
+<p>c)<br>
+  Nominal centre distance $C=0.5(d+D)=0.5\times(90+235)=162.5mm$
+</p>
+
+<p>d)<br>
+  Addendum $A = M = 5mm$<br>
+  Dedendum $B=1.25M=6.35mm$<br>
+  Tooth depth $=A+B=11.25mm$
+</p>
+
+<p>e)<br>
+  For moderate loading assume face width of the wheel $W=10$ $M=50mm$<br>
+  Face width of the pinion, say 7% larger $= 1.07\times50=53.5mm$
+</p>
+
+<hr>
+<h4>Gear design</h4>
+<hr>
+
+<p>
+  A comprehensive design procedure for gears is very complex and outside the scope of this manual. For example, AS2938 - Gears - Spur and Helical - Guide to Specification and Rating lists 88 different variables and constants and contains 32 different charts!
+</p>
+
+<p>
+  The most important factor to determine when designing gears for a certain application is the module. As has been stated, the greater the loading, the larger the size of the gear teeth and the larger the module.
+</p>
+
+<p>
+  A simplified factor to module selection is the use of a chart as the one given as Figure 8. This chart has been drawn for spur gears with face widths = 10M and with 18 teeth in the pinion. It may be used for face widths in the range 8-12M and for pinions with 17-19 teeth. It may also be used for helical angles up to 20&deg;. However, because helical gears are inherently stronger than spur gears, a somewhat smaller module will be satisfactory (say one standard size down).
+</p>
+
+<h5>Example 2</h5>
+
+<p>A helical pinion transmits 20kW @ 1500 rev/min to a mating gear. Loading is moderate. Determine suitable values for:</p>
+
+<ol type="a">
+  <li>The module for pinion and gear;</li>
+  <li>The face width of the pinion and the gear;</li>
+  <li>The PCD of the pinion.</li>
+</ol>
+
+<h5>Solution</h5>
+
+<p>a)<br>
+  From Figure 8, the module lies between 6 and 8. A module of 7 is not standard (first choice). Because the gear is a helical one, the choice of the smaller module is justified. Hence choose $M = 6$.
+</p>
+
+<p>b)<br>
+  With $M = 6$ and face width of the gear $= 10M$ (moderate loading), therefore the face width of the gear = 60 mm.<br>
+  For the pinion, make the face width about 7% larger, say 64mm.
+</p>
+
+<p>c)<br>
+  Make the number of teeth on the pinion = 19.<br>
+  Then the pinion $PCD = 6 \times 19 = 144mm$.
+</p>
+
+<figure>
+  <img src="./images/fig8.png" />
+  <figcaption>Figure 8: Module selection chart</figcaption>
+</figure>
+
+<hr>
+<h4>Gear tooth forces</h4>
+<hr>
+
+<p>The forces acting on gears in mesh occurs at the point of contact of the gears (the pitch point). The force $F$ as shown in Figure 9.</p>
+
+<figure>
+  <img src="./images/fig9.png" />
+  <figcaption>Figure 9: Gear tooth forces</figcaption>
+</figure>
+
+<p>In this diagram:</p>
+
+<dl class="dl-horizontal">
+  <dt>$F=$</dt>
+  <dd>resultant transverse force on the tooth at the pitch point. This is also the resultant transverse load on the shaft at the location of the gear. Note that this force acts perpendicular to the tooth at the pitch point.</dd>
+  <dt>$F_s=$</dt>
+  <dd>separating (or radial) force on the tooth at the pitch point. Its line of action passes through the centrelines of the two gears. This force is needed to keep the gears together and without it, the gears would simply slip out of mesh and not transmit any torque.</dd>
+  <dt>$F_t=$</dt>
+  <dd>tangential force acting on the tooth at the pitch point. This force multiplied by the pitch circle radius gives the torque transmitted by the gear.</dd>
+  <dt>$\theta=$</dt>
+  <dd>the pressure angle, that is the angle between forces $F$ and $F_t$. For most gears, this angle is 20&deg; <i>and should be assumed so</i> unless otherwise stated.</dd>
+</dl>
+
+<hr>
+<h4>Spur gear forces</h4>
+<hr>
+
+<p>Because torque is the tangential force multiplied by the pitch circle radius it is clear that the tangential force on the gear is calculated by:</p>
+
+$$ F_t = \frac{2T}{d} $$
+
+<p>Where $T=$ torque Nm and $d = PCD$ of the gear in m.</p>
+
+<p>From Figure 9,</p>
+
+<p>Separating force on spur gear</p>
+
+$$ F_s = F_t\tan\theta $$
+
+<p>and the resultant transverse force on the gear </p>
+
+$$ F = \sqrt{F_t^2 + F_s^2} $$
+
+<hr>
+<h4>Helical gear forces</h4>
+<hr>
+
+<p>Because the teeth are cut at an anlge (the helix angle), there is also an axial force on the gears. Te tangential force is the same as for the spur gears but the formula for the separating force becomes:</p>
+
+$$ F_s = \frac{F_t\tan\theta}{\cos\alpha} $$
+
+<p>Where $\alpha$ is the helix angle.</p>
+
+<p>The axial force on the gear given by:</p>
+
+$$ F_a = F_t\tan\alpha $$
+
+<h5>Example 3</h5>
+
+<p>A spur gear PCD 100mm transmist 800Nm of torque. Determine the tangential, separating and resultant force on each gear.</p>
+
+<h5>Solution</h5>
+
+<p>The tangential force is:</p>
+
+$$ F_t = \frac{2T}{d} = \frac{2 \times 800}{0.1} = 16kN $$
+
+<p>The separating force is (assuming a pressure angle of 20&deg;):</p>
+
+$$ F_s = F_t\tan\alpha = 16\tan20 = 5.82kN$$
+
+<p>The resultant force is:</p>
+
+$$ F = \sqrt{F_t^2+F_s^2} = \sqrt{16^2+5.82^2} = 17kN $$
+
+<h5>Example 4</h5>
+
+<p>Repeat Example 3 for helical gears with helix angle 20&deg; (all other data being the same). Also calculate the axial force.</p>
+
+$$ F_t = \frac{2T}{d} = \frac{2\times800}{0.1} = 16kN $$
+
+$$ F_s = \frac{F_t\tan\theta}{\cos\alpha} = \frac{16\tan20}{\cos20} = 6.2kN $$
+
+$$ F = \sqrt{F_t^2+F_s^2} = \sqrt{16^2+6.2^2} = 17.2kN $$
+
+$$ F_a = f_t\tan\alpha = 16\tan20 = 5.82kN $$
+
+<hr>
+<h1 id="ai">Additional Information &amp; Resources</h1>
+<hr>
+
+<p>This section contains the slides and a set of links to some useful resources that will help you form your PDS.</p>
+
+<hr>
+<h2 id="slides">Lecture Slides</h2>
+<hr>
+
+<dl class="dl-horizontal">
+  <dt><i class="fa fa-slideshare"></i> Lecture 1:</dt>
+  <dd><a target="blank" href="./lecture-slides/lecture-1.pdf">Introduction to the Exercise</a></dd>
+
+  <dt><i class="fa fa-slideshare"></i> Lecture 2:</dt>
+  <dd><a target="blank" href="./lecture-slides/lecture-2.pdf">Product Design Specification, Concept Design &amp; Selection</a></dd>
+
+  <dt><i class="fa fa-slideshare"></i> Lecture 3:</dt>
+  <dd><a target="blank" href="./lecture-slides/lecture-3.pdf">Modelling the Deployment of the Mechanism 1</a></dd>
+
+  <dt><i class="fa fa-slideshare"></i> Lecture 4:</dt>
+  <dd><a target="blank" href="./lecture-slides/lecture-4.pdf">Modelling the Deployment of the Mechanism 2</a></dd>
+
+  <dt><i class="fa fa-slideshare"></i> Lecture 5:</dt>
+  <dd><a target="blank" href="./lecture-slides/lecture-5.pdf">Gearbox Design</a></dd>
+
+  <dt><i class="fa fa-slideshare"></i> Lecture 6:</dt>
+  <dd>General Assemblies &amp; Submission Details</dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt><i class="fa fa-slideshare"></i> Session 1:</dt>
+  <dd><a target="blank" href="./lecture-slides/session-1.pdf">Slides</a></dd>
+  <dt><i class="fa fa-slideshare"></i> Session 2:</dt>
+  <dd><a target="blank" href="./lecture-slides/session-2.pdf">Slides</a></dd>
+  <dt><i class="fa fa-slideshare"></i> Session 3:</dt>
+  <dd><a target="blank" href="./lecture-slides/session-3.pdf">Slides</a></dd>
+  <dt><i class="fa fa-slideshare"></i> Session 4:</dt>
+  <dd><a target="blank" href="./lecture-slides/session-4.pdf">Slides</a></dd>
+</dl>
+
+<hr>
+<h2 id="links">Useful Links</h2>
+<hr>
+
+<p></p>
+
+<ul>
+  <li><strong><a href="http://www.bosch-ibusiness.com/boaaelmoocs/category/D.C.%20motors%20without%20transmission/114">Bosch Motors (Select your motor from here!)</a></strong></li>
+  <li><strong><a target="_blank" href="http://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/">Linkage Software</a></strong></li>
+  <li><strong><a target="_blank" href="./main.tex">Report Template</a></strong></li>
+  <li><strong><a target="_blank" href="./simulink_template_models.zip">Simulink Templates</a></strong></li>
+  <li><a href="http://www.which.co.uk/news/2011/06/top-10-fastest-convertible-roofs-255013/">Convertible Roof Retraction Times</a></li>
+  <li><a href="http://www.ebay.com/itm/94-99-BMW-318I-323I-325I-328I-M3-E36-CONVERTIBLE-TOP-MOTOR-8-353-576-BOSCH-058-/191513789136">BMW 318i Convertible Motor</a></li>
+  <li><a href="http://www.ebay.co.uk/itm/BMW-CONVERTIBLE-TOP-DAMPER-LIFT-STRUT-SUPPORT-51248227895-/360708730491?_trksid=p2054897.l4275#vi-ilComp">BMW Convertible Top Damper</a></li>
+  <li><a href="http://www.stabilus.com/motion-dampers/stab-o-shoc-gd2429/">Convetible Damper for Convertible Roofs</a></li>
+  <li><a href="http://www.skf.com/binary/12-122039/Stabilus_Stab-O-Shoc_EN.pdf">Oil Hydraulic Dampers</a></li>
+  <li><a href="http://www.slamproof.co.uk/">Slam Proof Dampers</a></li>
+  <li><a href="http://www.compuphase.com/electronics/folding.htm">Folding an A3 page into an A4 Report</a></li>
+  <li><a target="_blank" href="http://www.pelicanparts.com/techarticles/Boxster_Tech/71-BODY-Convertible_Top_Repair/71-BODY-Convertible_Top_Repair.htm">Porsche Electric Roof Repair</a></li>
+  <li><a target="_blank" href="http://www.vibrationschool.com/mans/SpecInter/SpecInter50.htm
+">Teeth Hunting</a></li>
+  <li><a target="_blank" href="http://www.martinsprocket.com/docs/default-source/brochures---gears/martin-gear-manual.pdf?sfvrsn=14">Gear Catalogue (Note: you do not have to select gears, this is for interest only)</a></li>
+  <li><a target="_blank" href="https://hdl.handle.net/2027/mdp.39015002036526">Spur Gears</a></li>
+  <li><a target="_blank" href="https://hdl.handle.net/2027/uiug.30112066992485">Helical Gears</a></li>
+  <li><a target="_blank" href="https://hdl.handle.net/2027/mdp.39015028293101">Worm &amp; Spiral</a></li>
+</ul>
+
+<hr>
+<h2 id="links">Convertible Roof Videos</h2>
+<hr>
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/RncgiYDSnSI?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/UAcYd4hVLGs?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/rBBk4pnMlO0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/sLB0AI1CyWA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/UqcKYFU6VIg?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<hr>
+<h2 id="links">Previous Years Models and YouTube Mechanisms</h2>
+<hr>
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/mAm5tsRMoiQ?ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:75.0%"><iframe src="https://www.youtube.com/embed/LuxXE25yUjg?ecver=2" width="480" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Rb37-daSLQ4?list=PLhoXNQqrCmEfAaTf0AfQ1Ztxmz2DoZiCk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+<div class="row">
+</div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/5yb7UNZG4nk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/bhEsFhVHE1A?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/oYhAKxOlfXQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/kcdj-b49TW8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/DXjdL2xdcpU?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/cBHXkgHqJ5U?list=PLGxa5y5etMwC6mDuAAqZfUbGgkvVzakpX?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/uDKNpEAmf8Y" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+  <hr>
+  <p>Design Manufacturing Futures - est. 2016</p>
+  <hr>
+  </footer>
+
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,29 @@
+---
+layout: page.hbs
+title: Bristol
+date: 04-04-2017
+collection:
+  - places
+---
+
+<h1>
+University of Bristol
+</h1>
+
+
+<h2>People @ Bristol</h2>
+<hr>
+
+<!-- List of Places -->
+{{#each collections.peopleatbristol}}
+  {{>card}}
+{{/each}}
+
+
+<h2>News Feed</h2>
+<hr>
+
+<!-- List of Places -->
+{{#each collections.bristol}}
+  {{>card}}
+{{/each}}

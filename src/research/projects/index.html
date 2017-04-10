@@ -1,0 +1,17 @@
+---
+layout: page.hbs
+title: Research Projects
+author: James Gopsill
+date: 04-04-2017
+---
+
+<h1>Research Projects</h1>
+
+<p>This page lists all the research projects that we've been involved in.</p>
+
+<hr>
+
+<!-- List of Posts -->
+{{#each collections.projects}}
+  {{>card}}
+{{/each}}

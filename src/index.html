@@ -1,0 +1,23 @@
+---
+layout: page.hbs
+title: Home
+author: James Gopsill
+date: 04-04-2017
+---
+
+<h1>Welcome to the Design & Manufacturing Futures Hub</h1>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat sodales lectus non elementum. Morbi sit amet euismod ligula, a cursus risus. Maecenas ut ipsum vitae velit ultricies eleifend. Aliquam pellentesque massa nec molestie consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consequat odio quis ullamcorper semper. Etiam feugiat, nisl ac molestie suscipit, enim velit sodales nibh, eget vestibulum arcu mi placerat orci. Maecenas vitae mauris ac metus tristique volutpat in non lacus. In tincidunt commodo sem vel egestas. Vivamus ac rutrum felis. Sed sagittis vehicula urna eu pretium. Etiam condimentum ligula eget velit rhoncus dignissim.</p>
+
+<p>Praesent efficitur odio in ultrices facilisis. Maecenas cursus mi sit amet maximus ornare. Suspendisse ultricies varius purus, in condimentum nisl fringilla vitae. Fusce viverra nulla vel nisi gravida ultrices. Sed sollicitudin mattis mauris ac porta. Vestibulum maximus sed nulla ut auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ac urna nulla. Aliquam faucibus est diam, at luctus lorem rutrum nec. Aliquam eu urna eget neque placerat convallis sed ut erat. Donec facilisis elit at ultrices viverra. Praesent rutrum magna mi, eu fermentum magna maximus ut.</p>
+
+<hr>
+<h2>Recent Posts</h2>
+<hr>
+
+<!-- List of Posts -->
+{{#each collections.posts}}
+  {{>card}}
+{{/each}}

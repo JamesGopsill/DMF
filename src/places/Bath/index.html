@@ -1,0 +1,28 @@
+---
+layout: page.hbs
+title: Bath
+date: 04-04-2017
+collection:
+  - places
+---
+
+
+<h1>
+University of Bath
+</h1>
+
+<h2>People @ Bath</h2>
+<hr>
+
+<!-- List of Places -->
+{{#each collections.peopleatbath}}
+  {{>card}}
+{{/each}}
+
+<h2>News Feed</h2>
+<hr>
+
+<!-- List of Places -->
+{{#each collections.bath}}
+  {{>card}}
+{{/each}}

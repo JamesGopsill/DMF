@@ -1,0 +1,21 @@
+---
+layout: page.hbs
+title: Dr. Chris Snider
+date: 04-04-2017
+summary: Dr. Chris Snider is a Lecturer of Engineering Design at the University of Bristol.
+collection:
+  - people
+  - peopleatbristol
+---
+
+<h1>{{title}}</h1>
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat sodales lectus non elementum. Morbi sit amet euismod ligula, a cursus risus. Maecenas ut ipsum vitae velit ultricies eleifend. Aliquam pellentesque massa nec molestie consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consequat odio quis ullamcorper semper. Etiam feugiat, nisl ac molestie suscipit, enim velit sodales nibh, eget vestibulum arcu mi placerat orci. Maecenas vitae mauris ac metus tristique volutpat in non lacus. In tincidunt commodo sem vel egestas. Vivamus ac rutrum felis. Sed sagittis vehicula urna eu pretium. Etiam condimentum ligula eget velit rhoncus dignissim.</p>
+
+<h2>Posts</h2>
+
+<!-- Comments in Markdown -->
+{{#each collections.csnider}}
+  {{>card}}
+{{/each}}

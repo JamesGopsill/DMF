@@ -1,0 +1,21 @@
+---
+layout: page.hbs
+title: The Language of Collaborative Manufacturing
+summary: The Language of Collaborative Manufacturing is a £1.9M research project sponsored by the Engineering and Physical Sciences Research Council and led by the Universities of Bristol and Bath in collaboration with our industrial partners.  We aim to deliver next-generation project dashboards that can identify potential project issues, improve productivity, and improve the management of aspects such as intellectual property, risk and cost.
+author: James Gopsill
+date: 04-04-2017
+collection:
+  - projects
+---
+
+<h1>{{title}}</h1>
+
+<p>{{summary}}</p>
+
+<h2>Posts</h2>
+<hr>
+
+<!-- List of Posts -->
+{{#each collections.locm}}
+  {{>card}}
+{{/each}}

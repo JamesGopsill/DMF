@@ -1,0 +1,25 @@
+---
+layout: page.hbs
+title: Dr. James Gopsill
+author: James Gopsill
+date: 04-04-2017
+summary: Dr. James Gopsill is a Lecturer of Engineering Design at the University of Bath.
+collection:
+  - people
+  - peopleatbath
+---
+
+<h1>{{title}}</h1>
+<hr>
+
+<p>
+Dr. James Gopsill is a Lecturer of Engineering Design at the University of Bath
+</p>
+
+<h2>Posts</h2>
+<hr>
+
+<!-- List of Posts -->
+{{#each collections.jgopsill}}
+  {{>card}}
+{{/each}}

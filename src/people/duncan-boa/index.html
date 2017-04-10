@@ -1,0 +1,19 @@
+---
+layout: page.hbs
+title: Dr. Duncan Boa
+date: 04-04-2017
+summary: Dr. Duncan Boa is a researcher in the DMF Hub at the University of Bristol.
+collection:
+  - people
+  - peopleatbristol
+---
+
+<h1>{{title}}</h1>
+<hr>
+
+<h2>Posts</h2>
+
+<!-- Comments in Markdown -->
+{{#each collections.dboa}}
+  {{>card}}
+{{/each}}

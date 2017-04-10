@@ -1,0 +1,15 @@
+---
+layout: page.hbs
+title: Course Material
+author: James Gopsill
+date: 04-04-2017
+---
+
+
+<h1>Course Material</h1>
+<hr>
+
+<!-- List of Posts -->
+{{#each collections.courses}}
+  {{>card}}
+{{/each}}
