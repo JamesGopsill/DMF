@@ -2,6 +2,28 @@
 
 # Post Frontmatter
 
+Each post starts off with a metadata formatted in the YAML style. An example is shown below:
+
+```
+---
+layout: page.hbs
+title: Journal paper accepted to Artificial Intelligence for Engineering Design, Analysis and Manufacturing.
+author: James Gopsill
+type: Publication
+summary: One of our papers has been accepted to Artificial Intelligence for Engineering Design, Analysis and Manufacturing. Entitled ''Automatic Generation of Design Structure Matrices through the Evolution of Product Models'', the paper reports on a novel strategy to automatically generate Design Structure Matrices from the changes to engineering documentation and models.
+date: 04-04-2017
+collection:
+  - posts
+  - jgopsill
+  - bath
+  - publications
+  - locm
+  - bristol
+---
+
+[REST OF THE POST GOES HERE]
+```
+
 # Types
 
 - Publication

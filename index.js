@@ -1,17 +1,13 @@
 'use strict';
 
 const Metalsmith  = require('metalsmith');
-// let markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const collections = require('metalsmith-collections');
 const handlebars = require('handlebars');
 const hbtmd = require('metalsmith-hbt-md');
 const chokidar = require('chokidar');
 const sass = require('metalsmith-sass');
-//const rootPath = require('metalsmith-rootpath');
-//const links = require('metalsmith-relative-links');
-//let replace = require('metalsmith-regex-replace');
-
+const spawn = require('child_process').spawn;
 
 function buildSite() {
   Metalsmith(__dirname)
@@ -30,14 +26,6 @@ function buildSite() {
     .destination('./docs')
     // enable collections
     .use(collections())
-    // custom relative paths
-    /* .use(function(files, metalsmith, done){
-      for(var file in files){
-        console.log(file)
-        file.link =
-      }
-      done();
-    }) */
     // gather the layouts
     .use(layouts({
       // use the handlebars layout engine
@@ -59,20 +47,40 @@ function buildSite() {
     });
 }
 
-console.log('Building');
+// Perform build at the start
+//console.log('Building Site');
+//buildSite();
 
-buildSite();
+// Spawn HTTP Server
+//const httpserver = spawn('node', ['-v']);
+// windows only
+const httpserver = spawn('cmd', ['/c', 'http-server', '.\\docs']);
 
-console.log('Watching');
+httpserver.stdout.on('data', (data) => {
+  console.log(`http-server out:\n${data}`);
+});
+
+httpserver.stderr.on('data', (data) => {
+  console.log(`http-server error:\n${data}`);
+});
+
+
+httpserver.on('close', (code) => {
+  console.log(`child process exited with code:\n${code}`);
+});
+
+// Watch for file updates and then run build
+
+console.log('Watching Source Files...');
 
 chokidar.watch('./layouts/**/*', {}).on('change', (filePath, details) => {
   console.log('Building');
   buildSite();
-  console.log('Watching');
+  console.log('Watching Source Files...');
 });
 
 chokidar.watch('./src/**/*', {}).on('change', (filePath, details) => {
   console.log('Building');
   buildSite();
-  console.log('Watching');
+  console.log('Watching Source Files...');
 });
